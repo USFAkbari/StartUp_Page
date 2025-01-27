@@ -99,10 +99,13 @@ a:focus {
 
 .center {
   display:flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+  gap: 30px; /* Space between buttons */
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20%;
+  height: 100%;
 }
 
 .overlay {
