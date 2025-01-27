@@ -1,7 +1,7 @@
 :root {
   /* colors */
   --background: #0e0e0e;
-  --foreground: #F1F1F1;
+  --foreground: #f1f1f1;
 
   /* fonts */
   --font-family: Noto Mono, sans-serif;
@@ -17,26 +17,26 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Roboto-Regular'),
-    url('../assets/fonts/Roboto-Regular.woff2') format('woff2'),
-    url('../assets/fonts/Roboto-Regular.woff') format('woff');
+  src: local("Lato Regular"), local("Roboto-Regular"),
+    url("../assets/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Roboto-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  src: local('Roboto Black'), local('Roboto-Black'),
-    url('../assets/fonts/Roboto-Black.woff2') format('woff2'),
-    url('../assets/fonts/Roboto-Black.woff') format('woff');
+  src: local("Roboto Black"), local("Roboto-Black"),
+    url("../assets/fonts/Roboto-Black.woff2") format("woff2"),
+    url("../assets/fonts/Roboto-Black.woff") format("woff");
 }
 
 @font-face {
   font-family: Noto Mono;
   font-style: normal;
   font-weight: 400;
-  src: local('Noto Mono'),
-    url('../assets/fonts/NotoMono-Regular.ttf') format('ttf'),
+  src: local("Noto Mono"),
+    url("../assets/fonts/NotoMono-Regular.ttf") format("ttf");
 }
 
 * {
@@ -98,11 +98,11 @@ a:focus {
 }
 
 .center {
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 20%;
 }
 
 .overlay {
@@ -136,7 +136,7 @@ a:focus {
   z-index: 2;
 }
 
-.search-form>div {
+.search-form > div {
   width: 100%;
 }
 
@@ -180,7 +180,7 @@ body.suggestions .search-suggestions {
 }
 
 .search-suggestion b::after {
-  content: ' ';
+  content: " ";
   position: absolute;
   right: 0;
   bottom: -0.3rem;
@@ -246,7 +246,7 @@ body.suggestions .search-suggestions {
 }
 
 .command-name::after {
-  content: ' ';
+  content: " ";
   display: none;
   position: absolute;
   right: 0;
@@ -325,4 +325,27 @@ body.form .search-form {
   .categories {
     grid-template-columns: repeat(5, 220px) 175px;
   }
+}
+/* Style for the button */
+.button-section {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+  gap: 30px; /* Space between buttons */
+  margin-top: 20px; /* Adjust spacing below the clock */
+}
+.custom-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  color: #ffffff; /* Text color */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 0; /* Remove default padding */
+  display: block; /* Make buttons stack vertically */
+  margin-bottom: 10px; /* Add space between buttons */
+}
+
+/* Hover effect */
+.custom-button:hover {
+  color: #a1a1a1; /* Darker text color on hover */
 }

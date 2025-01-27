@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="style/style.css" class="style" />
+    <title>Home</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex"/>
-  <link rel="stylesheet" href="style/style.css" class="style">
-  <title>Home</title>
-</head>
-
-<body>
-  <div class="center"><time class="clock" id="clock"></time></div>
-
-  <form autocomplete="off" class="center overlay search-form" id="search-form" spellcheck="false">
-    <div>
-      <input class="search-input" id="search-input" title="search" type="text" tabindex="1" autofocus/>
-      <ul class="search-suggestions" id="search-suggestions"></ul>
+  <body>
+    <div class="center">
+      <time class="clock" id="clock"></time>
     </div>
-  </form>
-  
-  <aside class="center help overlay" id="help"></aside>
-  <script src="script/script.js"></script>
-</body>
+    <!-- New Buttons Section -->
+    <div class="center button-section">
+      <!-- Buttons stacked under each other -->
+      <button class="custom-button" onclick="window.location.href='https://www.google.com';">~*Google*~</button>
+      <button class="custom-button" onclick="window.location.href='https://www.github.com';">~*GitHub*~</button>
+    </div>
+    <form
+      autocomplete="off"
+      class="center overlay search-form"
+      id="search-form"
+      spellcheck="false"
+    >
+      <div>
+        <input
+          class="search-input"
+          id="search-input"
+          title="search"
+          type="text"
+          tabindex="1"
+          autofocus
+        />
+        <ul class="search-suggestions" id="search-suggestions"></ul>
+      </div>
+    </form>
+    <aside class="center help overlay" id="help"></aside>
+    <script src="script/script.js"></script>
+  </body>
 </html>
